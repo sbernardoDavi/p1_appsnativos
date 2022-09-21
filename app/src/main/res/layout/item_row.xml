@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp">
+
+    <ImageView
+        android:id="@+id/item_imagem"
+        android:src="@color/cardview_dark_background"
+        android:layout_width="60dp"
+        android:layout_height="50dp"
+        />
+
+    <TextView
+
+        android:id="@+id/item_hora"
+        style="@style/TextAppearance.AppCompat.SearchResult.Subtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/item_imagem"
+        android:text="hora" />
+
+    <TextView
+        android:id="@+id/item_titulo"
+        style="@style/TextAppearance.AppCompat.Title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/item_hora"
+        android:layout_marginLeft="-60dp"
+        android:layout_marginTop="15dp"
+        android:layout_toRightOf="@id/item_imagem"
+        android:text="titulo" />
+
+    <TextView
+        android:id="@+id/item_descricao"
+        style="@style/TextAppearance.AppCompat.SearchResult.Subtitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/item_titulo"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="10dp"
+        android:textSize="15sp"
+        android:text="descricao" />
+
+
+</RelativeLayout>
