@@ -17,9 +17,10 @@
         style="@style/TextAppearance.AppCompat.SearchResult.Subtitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="20dp"
-        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="17dp"
         android:layout_toRightOf="@id/item_imagem"
+        android:textSize="10dp"
         android:text="hora" />
 
     <TextView
@@ -29,7 +30,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/item_hora"
         android:layout_marginLeft="-60dp"
-        android:layout_marginTop="15dp"
+        android:layout_marginTop="10dp"
         android:layout_toRightOf="@id/item_imagem"
         android:text="titulo" />
 
@@ -40,7 +41,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/item_titulo"
         android:layout_marginLeft="0dp"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="5dp"
         android:textSize="15sp"
         android:text="descricao" />
 
