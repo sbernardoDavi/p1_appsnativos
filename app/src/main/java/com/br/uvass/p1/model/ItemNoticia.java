@@ -2,20 +2,26 @@ package com.br.uvass.p1.model;
 
 import java.util.Date;
 
-public class item {
+public class ItemNoticia {
 
     private Integer id;
     private int foto;
     private String hora;
     private String titulo;
     private String descricao;
+    private String autor;
+    private String data;
+    private String noticiaFull;
 
-    public item(Integer id, int foto, String hora, String titulo, String descricao) {
+    public ItemNoticia(Integer id, int foto, String hora, String titulo, String descricao, String autor, String data, String noticiaFull) {
         this.id = id;
         this.foto = foto;
         this.hora = hora;
         this.titulo = titulo;
         this.descricao = descricao;
+        this.data = data;
+        this.autor = autor;
+        this.noticiaFull = noticiaFull;
     }
 
     public Integer getId() {
@@ -56,5 +62,29 @@ public class item {
 
     public void setDescricao(String descricao) {
         this.descricao = descricao;
+    }
+
+    public String getAutor() {
+        return autor;
+    }
+
+    public void setAutor(String autor) {
+        this.autor = autor;
+    }
+
+    public String getData() {
+        return data;
+    }
+
+    public void setData(String data) {
+        this.data = data;
+    }
+
+    public String getNoticiaFull() {
+        return noticiaFull;
+    }
+
+    public void setNoticiaFull(String noticiaFull) {
+        this.noticiaFull = noticiaFull;
     }
 }

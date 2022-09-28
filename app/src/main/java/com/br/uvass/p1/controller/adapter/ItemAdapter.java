@@ -5,7 +5,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
-import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -13,19 +12,17 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
 import com.br.uvass.p1.R;
-import com.br.uvass.p1.model.item;
-
-import org.w3c.dom.Text;
+import com.br.uvass.p1.model.ItemNoticia;
 
 import java.util.ArrayList;
 
-public class ItemAdapter extends ArrayAdapter<item> {
+public class ItemAdapter extends ArrayAdapter<ItemNoticia> {
 
     private Context myContext;
     private int myResource;
 
 
-    public ItemAdapter(@NonNull Context context, int resource, @NonNull ArrayList<item> objects) {
+    public ItemAdapter(@NonNull Context context, int resource, @NonNull ArrayList<ItemNoticia> objects) {
         super(context, resource, objects);
         this.myContext = context;
         this.myResource = resource;
@@ -46,8 +43,6 @@ public class ItemAdapter extends ArrayAdapter<item> {
         textViewHora.setText(getItem(position).getHora());
         textViewTitulo.setText(getItem(position).getTitulo());
         textViewDescricao.setText(getItem(position).getDescricao());
-
-
 
         return convertView;
     }
